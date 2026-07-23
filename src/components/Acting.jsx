@@ -1,5 +1,4 @@
 import FadeUp from './FadeUp'
-import Placeholder from './Placeholder'
 import { actingRoles } from '../data/content'
 
 export default function Acting() {
@@ -13,7 +12,7 @@ export default function Acting() {
         </FadeUp>
 
         <FadeUp className="acting-grid">
-          <img src="/public/491694074_1126378786170832_2818011236065651442_n.jpg" alt="Acting" />
+          <img className="acting-reel" src="/491694074_1126378786170832_2818011236065651442_n.jpg" alt="Jonathan performing" />
           <div className="acting-roles">
             {actingRoles.map((r, i) => (
               <div className="role-row" key={i}>

@@ -1,5 +1,4 @@
 import FadeUp from './FadeUp'
-import Placeholder from './Placeholder'
 import LangPanel from './LangPanel'
 import { timeline } from '../data/content'
 
@@ -14,7 +13,7 @@ export default function Story() {
 
         <FadeUp className="story-grid">
           <div className="story-side">
-            <img src="/public/image-initial-1769435244516.png" alt="Portrait of Jonathan" />
+            <img className="story-photo" src="/image-initial-1769435244516.png" alt="Portrait of Jonathan" />
             <LangPanel />
           </div>
 
