@@ -1,4 +1,6 @@
-import LayerCanvas from './LayerCanvas'
+import { lazy, Suspense } from 'react'
+
+const LayerCanvas = lazy(() => import('./LayerCanvas'))
 
 export default function Hero() {
   return (
@@ -28,7 +30,9 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-canvas-wrap">
+          <Suspense fallback={<div className="canvas-fallback" />}>
           <LayerCanvas />
+          </Suspense>
           <div className="canvas-caption">html → css → javascript → react</div>
         </div>
       </div>

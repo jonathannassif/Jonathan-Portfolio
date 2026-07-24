@@ -405,6 +405,13 @@ section:last-of-type {
   pointer-events: none;
 }
 
+.canvas-fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--panel), var(--ink-2));
+}
+
 #layer-canvas {
   width: 100%;
   height: 100%;
